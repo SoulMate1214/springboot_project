@@ -1,5 +1,7 @@
 package com.gzmu.springboot_project.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -7,6 +9,7 @@ import java.io.Serializable;
  * @author author
  */
 @Entity
+@Data
 @Table(name = "goods_manage")
 public class GoodsManage implements Serializable {
 
@@ -76,90 +79,4 @@ public class GoodsManage implements Serializable {
     @Column(name = "states")
     private String states;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getGoodsName() {
-        return goodsName;
-    }
-
-    public void setGoodsName(String goodsName) {
-        this.goodsName = goodsName;
-    }
-
-    public Integer getGoodsClassId() {
-        return goodsClassId;
-    }
-
-    public void setGoodsClassId(Integer goodsClassId) {
-        this.goodsClassId = goodsClassId;
-    }
-
-    public String getChannel() {
-        return channel;
-    }
-
-    public void setChannel(String channel) {
-        this.channel = channel;
-    }
-
-    public Integer getNumber() {
-        return number;
-    }
-
-    public void setNumber(Integer number) {
-        this.number = number;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getStockTime() {
-        return stockTime;
-    }
-
-    public void setStockTime(String stockTime) {
-        this.stockTime = stockTime;
-    }
-
-    public String getPutTime() {
-        return putTime;
-    }
-
-    public void setPutTime(String putTime) {
-        this.putTime = putTime;
-    }
-
-    public String getStates() {
-        return states;
-    }
-
-    public void setStates(String states) {
-        this.states = states;
-    }
-
-    @Override
-    public String toString() {
-        return "GoodsManage{" +
-                "id=" + id +
-                ", goodsName='" + goodsName + '\'' +
-                ", goodsClassId=" + goodsClassId +
-                ", channel='" + channel + '\'' +
-                ", number=" + number +
-                ", price='" + price + '\'' +
-                ", stockTime='" + stockTime + '\'' +
-                ", putTime='" + putTime + '\'' +
-                ", states='" + states + '\'' +
-                '}';
-    }
 }

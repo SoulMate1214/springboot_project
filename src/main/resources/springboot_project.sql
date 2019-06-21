@@ -26,3 +26,15 @@ create table goods_manage
 )
   charset = utf8;
 
+create table user
+(
+  id         int auto_increment comment '编号'
+    primary key,
+  username   varchar(50) not null comment '账户名',
+  userpwd    varchar(50) not null comment '密码',
+  email      varchar(50) null comment '电子邮箱',
+  createdate date        null comment '注册时间',
+  userstatus int         null comment '用户状态（1启用 0禁用）',
+  role       int         null comment '用户权限（1普通用户 0管理员）'
+)
+  charset = utf8;
