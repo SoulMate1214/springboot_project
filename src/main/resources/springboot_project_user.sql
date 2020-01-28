@@ -1,1 +1,1 @@
-INSERT INTO springboot_project.user (id, username, userpwd, email, createdate, userstatus, role) VALUES (1, 'soul', '981214', '437665122@qq.com', '2020-01-28', 1, 1);
+INSERT INTO springboot_project.user (id, username, userpwd, email, createdate, userstatus, role) VALUES (1, 'admin123', 'admin123', '123456789@qq.com', '2020-01-28', 1, 1);
