@@ -81,7 +81,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
-        
+
         <!--集成HAL-browser,它是基于hal+json的media type的API浏览器-->
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -93,6 +93,22 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.10</version>
+        </dependency>
+
+        <!--沙箱支付宝-->
+        <!-- https://mvnrepository.com/artifact/com.alipay.sdk/alipay-sdk-java -->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.9.28.ALL</version>
+        </dependency>
+
+
+        <!--支付宝接口json数据传输-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.66</version>
         </dependency>
     </dependencies>
 
